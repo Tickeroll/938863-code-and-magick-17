@@ -17,11 +17,10 @@ window.renderStatistics = function (ctx, names = [], times = []) {
     }
   }
   var x = 150;
-  for (var i = 0; i < names.length; i++)
-  {
+  for (var i = 0; i < names.length; i++){
     if (names[i]==="Вы") {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
-    }else{
+    } else {
       ctx.fillStyle = 'rgba(125, 125, 255, ' + (Math.random() * 0.8 + 0.2) + ')';
     }
     var h = 150 * (times[i]/Maxtime);
@@ -32,8 +31,6 @@ window.renderStatistics = function (ctx, names = [], times = []) {
     ctx.fillText(Math.round(times[i]), x, columnStart-10);
     x = x + (50 + 40);
   }
-
-
 }
 
 
