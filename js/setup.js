@@ -1,5 +1,5 @@
-var wizard_firstnames = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
-var wizard_surnames = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
+var wizardFirstnames = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
+var wizardSurnames = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
 var coatColor = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
 var eyesColor = ['rgb(0, 0, 0)', 'rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 0)', 'rgb(0, 255, 0)'];
 var CLASS_HIDDEN = 'hidden';
@@ -15,8 +15,8 @@ document.getElementsByClassName('setup')[0].classList.remove(CLASS_HIDDEN);
 var wizardParty = [];
 for (var i = 0; i < WIZARD_NUMBERS; i++) {
   wizardParty.push({
-    name: wizard_firstnames[getRandomInt(0, wizard_firstnames.length)] + ' '
-      + wizard_surnames[getRandomInt(0, wizard_surnames.length)],
+    name: wizardFirstnames[getRandomInt(0, wizardFirstnames.length)] + ' '
+      + wizardSurnames[getRandomInt(0, wizardSurnames.length)],
     coatColor: coatColor[getRandomInt(0, coatColor.length)],
     eyesColor: eyesColor[getRandomInt(0, eyesColor.length)]
   });
